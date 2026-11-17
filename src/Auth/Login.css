@@ -10,7 +10,7 @@ body, html, #root {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
-  background: #f5f7fa;
+  background: #F4F8FC;
 }
 
 .login-wrapper {
@@ -21,10 +21,10 @@ body, html, #root {
   position: relative;
   overflow: hidden;
 
-  /* Light, clean animated gradient */
-  background: linear-gradient(-45deg, #d5f5e3, #a3e4d7, #76d7c4, #a3e4d7, #d5f5e3);
+  /* Logic Grid animated gradient based on logo palette */
+  background: linear-gradient(-45deg, #041B39, #083363, #0052BE, #0067E8, #00D8F3, #041B39);
   background-size: 300% 300%;
-  animation: gradientBG 6s ease-in-out infinite;
+  animation: gradientBG 8s ease-in-out infinite;
 }
 
 @keyframes gradientBG {
@@ -39,16 +39,15 @@ body, html, #root {
   }
 }
 
-
-
 .login-card {
   position: relative;
   width: 100%;
-  max-width: 420px;
+  max-width: 440px;
   background: #ffffff;
-  border-radius: 16px;
-  padding: 40px 32px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  padding: 42px 36px;
+  box-shadow: 0 20px 50px rgba(4, 27, 57, 0.25);
+  border: 1px solid rgba(0, 216, 243, 0.15);
   z-index: 2;
   transition: all 0.3s ease;
 }
@@ -60,20 +59,22 @@ body, html, #root {
 }
 
 .logo-img {
-  height: 48px;
-  margin-bottom: 20px;
+  height: 52px;
+  max-width: 220px;
+  object-fit: contain;
+  margin-bottom: 22px;
 }
 
 .login-title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 8px;
-  color: #111827;
+  color: #041B39;
 }
 
 .login-subtitle {
   font-size: 14px;
-  color: #6b7280;
+  color: #5D7385;
   margin-bottom: 24px;
 }
 
@@ -86,13 +87,13 @@ body, html, #root {
   height: 44px;
   padding: 0 14px;
   border-radius: 10px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #D5E2EC;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-input:focus {
-  border-color: #6366f1;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  border-color: #0067E8;
+  box-shadow: 0 0 0 2px rgba(0, 103, 232, 0.2);
   outline: none;
 }
 
@@ -103,32 +104,36 @@ body, html, #root {
 
 .forgot-password a {
   font-size: 13px;
-  color: #134d2a;
+  color: #0067E8;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .forgot-password a:hover {
   text-decoration: underline;
-  color: #8aa694;
+  color: #0052BE;
 }
 
 .login-button {
   width: 100%;
   height: 44px;
-  background-color: #134d2a;
+  background-color: #0067E8;
   color: white;
-  font-weight: 500;
+  font-weight: 650;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.1s ease;
+  transition: background 0.3s ease, transform 0.1s ease, box-shadow 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 103, 232, 0.25);
 }
 
 .login-button:hover {
-  background-color: #8aa694;
+  background-color: #0052BE;
+  box-shadow: 0 8px 22px rgba(0, 103, 232, 0.35);
+  transform: translateY(-1px);
 }
 
 .login-button:disabled {
@@ -139,18 +144,18 @@ body, html, #root {
 .signup-text {
   margin-top: 24px;
   font-size: 13px;
-  color: #6b7280;
+  color: #5D7385;
 }
 
 .signup-link {
-  color: #134d2a;
+  color: #0067E8;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .signup-link:hover {
   text-decoration: underline;
-  color: #8aa694;
+  color: #0052BE;
 }
 
 /* Loader Spinner */

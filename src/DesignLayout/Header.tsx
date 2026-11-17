@@ -93,7 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleSidebar }) => {
         className="header"
         style={{
           padding: "0 16px",
-          backgroundColor: "#E0F7F6", // light teal to match sidebar
+          backgroundColor: "#FFFFFF",
           boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)", // optional subtle shadow
         }}
       >
@@ -102,7 +102,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleSidebar }) => {
             <Button
               type="text"
               icon={
-                <MenuOutlined style={{ fontSize: "20px", color: "#004d40" }} />
+                <MenuOutlined style={{ fontSize: "20px", color: "#041B39" }} />
               } // darker teal for contrast
               style={{ background: "transparent" }}
               onClick={toggleSidebar}
@@ -120,14 +120,14 @@ const Navbar: React.FC<NavbarProps> = ({ toggleSidebar }) => {
                   <Avatar
                     style={{
                       cursor: "pointer",
-                      backgroundColor: "#b2dfdb", // slightly darker teal for avatar contrast
+                      backgroundColor: "#E8F4FD",
                       width: "40px",
                       height: "40px",
                       marginBottom: "16px",
                     }}
                     icon={
                       !userPhoto || typeof userPhoto !== "string" ? (
-                        <UserOutlined style={{ color: "#004d40" }} />
+                        <UserOutlined style={{ color: "#041B39" }} />
                       ) : undefined
                     }
                     src={avatarSrc}

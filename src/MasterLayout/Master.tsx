@@ -88,7 +88,7 @@ const Master: React.FC<MasterProps> = ({ children }) => {
                         flex: 1,
                         marginLeft: isSmallScreen ? 0 : (collapsed ? 80 : 220),
                         transition: 'margin-left 0.2s',
-                        backgroundColor: '#f0f4f7',
+                        backgroundColor: '#F4F8F9',
                         overflow: 'hidden'
                     }}
                 >

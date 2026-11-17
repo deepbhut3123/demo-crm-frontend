@@ -22,8 +22,8 @@ const { Title, Text } = Typography;
 const { RangePicker } = DatePicker;
 
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 type DateRangeValue = [Dayjs | null, Dayjs | null] | null;
@@ -792,7 +792,7 @@ const DealerStatementPage: React.FC = () => {
       align: "right",
       render: (value: number) =>
         value > 0 ? (
-          <Text strong style={{ color: "#1d4ed8" }}>
+          <Text strong style={{ color: "#041B39" }}>
             {formatAmount(value)}
           </Text>
         ) : (
@@ -806,7 +806,7 @@ const DealerStatementPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -815,7 +815,7 @@ const DealerStatementPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
         bodyStyle={{ position: "relative", padding: 18 }}
@@ -833,10 +833,10 @@ const DealerStatementPage: React.FC = () => {
             height: 40,
             paddingInline: 18,
             border: "none",
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
             color: "#ffffff",
             fontWeight: 700,
-            boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+            boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
           }}
         >
           Download PDF
@@ -901,8 +901,8 @@ const DealerStatementPage: React.FC = () => {
                 padding: "12px 14px",
                 borderRadius: 18,
                 background:
-                  "linear-gradient(135deg, rgba(0, 105, 92, 0.1) 0%, rgba(224, 247, 246, 0.95) 55%, rgba(255, 255, 255, 0.98) 100%)",
-                border: "1px solid rgba(0, 105, 92, 0.12)",
+                  "linear-gradient(135deg, rgba(0, 216, 243, 0.1) 0%, rgba(232, 248, 246, 0.95) 55%, rgba(255, 255, 255, 0.98) 100%)",
+                border: "1px solid rgba(0, 216, 243, 0.12)",
               }}
             >
               <Text
@@ -912,7 +912,7 @@ const DealerStatementPage: React.FC = () => {
                   fontWeight: 700,
                   letterSpacing: 1.1,
                   textTransform: "uppercase",
-                  color: "#0f766e",
+                  color: "#0067E8",
                 }}
               >
                 Selected Dealer
@@ -930,7 +930,7 @@ const DealerStatementPage: React.FC = () => {
                 padding: "12px 14px",
                 borderRadius: 18,
                 background: "#ffffff",
-                border: "1px solid rgba(0, 105, 92, 0.12)",
+                border: "1px solid rgba(0, 216, 243, 0.12)",
               }}
             >
               <Text style={{ color: "#64748b", fontSize: 12 }}>Total Bills</Text>
@@ -944,11 +944,11 @@ const DealerStatementPage: React.FC = () => {
                 padding: "12px 14px",
                 borderRadius: 18,
                 background: "#ffffff",
-                border: "1px solid rgba(0, 105, 92, 0.12)",
+                border: "1px solid rgba(0, 216, 243, 0.12)",
               }}
             >
               <Text style={{ color: "#64748b", fontSize: 12 }}>Total Payments</Text>
-              <Title level={4} style={{ margin: "8px 0 0", color: "#1d4ed8" }}>
+              <Title level={4} style={{ margin: "8px 0 0", color: "#041B39" }}>
                 {formatAmount(totalPaymentAmount)}
               </Title>
             </div>
@@ -1217,8 +1217,8 @@ const DealerStatementPage: React.FC = () => {
                   style={{
                     padding: "10px 14px",
                     borderRadius: 12,
-                    border: "1px solid rgba(0, 105, 92, 0.15)",
-                    background: "rgba(0, 105, 92, 0.06)",
+                    border: "1px solid rgba(0, 216, 243, 0.15)",
+                    background: "rgba(0, 216, 243, 0.06)",
                   }}
                 >
                   <Text strong>

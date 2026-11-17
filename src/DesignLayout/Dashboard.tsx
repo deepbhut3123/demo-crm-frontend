@@ -26,7 +26,7 @@ import {
 const { Title, Text } = Typography;
 const SURFACE = {
   page:
-    "radial-gradient(circle at top left, rgba(13, 148, 136, 0.14) 0%, rgba(13, 148, 136, 0) 32%), radial-gradient(circle at top right, rgba(37, 99, 235, 0.12) 0%, rgba(37, 99, 235, 0) 28%), linear-gradient(180deg, #f4fbfa 0%, #eef5fb 48%, #f8fafc 100%)",
+    "radial-gradient(circle at top left, rgba(0, 216, 243, 0.14) 0%, rgba(0, 216, 243, 0) 32%), radial-gradient(circle at top right, rgba(4, 27, 57, 0.12) 0%, rgba(4, 27, 57, 0) 28%), linear-gradient(180deg, #F4FBFA 0%, #F1F7F8 48%, #f8fafc 100%)",
   panel: "linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,250,252,0.96) 100%)",
   border: "1px solid rgba(148, 163, 184, 0.14)",
   shadow: "0 20px 45px rgba(15, 23, 42, 0.08)",
@@ -35,37 +35,37 @@ const SURFACE = {
 const TOP_CARD_STYLES = [
   {
     background:
-      "linear-gradient(135deg, rgba(15, 118, 110, 0.95) 0%, rgba(34, 211, 193, 0.78) 100%)",
-    glow: "rgba(45, 212, 191, 0.38)",
+      "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+    glow: "rgba(0, 216, 243, 0.34)",
   },
   {
     background:
-      "linear-gradient(135deg, rgba(37, 99, 235, 0.96) 0%, rgba(56, 189, 248, 0.74) 100%)",
-    glow: "rgba(59, 130, 246, 0.34)",
+      "linear-gradient(135deg, #041B39 0%, #244D68 100%)",
+    glow: "rgba(4, 27, 57, 0.28)",
   },
   {
     background:
-      "linear-gradient(135deg, rgba(8, 145, 178, 0.96) 0%, rgba(45, 212, 191, 0.72) 100%)",
-    glow: "rgba(34, 211, 238, 0.32)",
+      "linear-gradient(135deg, #168F86 0%, #42C4B8 100%)",
+    glow: "rgba(0, 216, 243, 0.3)",
   },
   {
     background:
-      "linear-gradient(135deg, rgba(37, 99, 235, 0.96) 0%, rgba(99, 102, 241, 0.78) 55%, rgba(139, 92, 246, 0.74) 100%)",
-    glow: "rgba(129, 140, 248, 0.34)",
+      "linear-gradient(135deg, #041B39 0%, #0067E8 100%)",
+    glow: "rgba(4, 27, 57, 0.26)",
   },
 ] as const;
 
 const PIE_COLORS = [
-  "#0f766e",
-  "#0ea5e9",
-  "#2563eb",
-  "#7c3aed",
-  "#ea580c",
-  "#dc2626",
-  "#0891b2",
-  "#16a34a",
-  "#9333ea",
-  "#ca8a04",
+  "#041B39",
+  "#0067E8",
+  "#00D8F3",
+  "#2A7794",
+  "#44A99F",
+  "#244D68",
+  "#72D2C9",
+  "#42637F",
+  "#85C5BF",
+  "#547B8C",
 ] as const;
 
 type DashboardSummary = {
@@ -973,7 +973,7 @@ const Dashboard: React.FC = () => {
     {
       label: "All Routes",
       value: summary.routesCount,
-      color: "#0f766e",
+      color: "#0067E8",
       helper: "Registered routes",
       accent: "rgba(16, 185, 129, 0.18)",
       background: "linear-gradient(135deg, rgba(236, 253, 245, 0.88) 0%, rgba(209, 250, 229, 0.72) 100%)",
@@ -982,9 +982,9 @@ const Dashboard: React.FC = () => {
     {
       label: "All Shops",
       value: summary.shopsCount,
-      color: "#1d4ed8",
+      color: "#041B39",
       helper: "Active retailers",
-      accent: "rgba(59, 130, 246, 0.18)",
+      accent: "rgba(4, 27, 57, 0.18)",
       background: "linear-gradient(135deg, rgba(239, 246, 255, 0.88) 0%, rgba(219, 234, 254, 0.72) 100%)",
       icon: FiShoppingBag,
     },
@@ -1034,7 +1034,7 @@ const Dashboard: React.FC = () => {
               borderRadius: 20,
               padding: 18,
               background:
-                "linear-gradient(135deg, rgba(6, 95, 70, 0.98) 0%, rgba(13, 148, 136, 0.92) 52%, rgba(30, 64, 175, 0.88) 100%)",
+                "linear-gradient(135deg, rgba(6, 95, 70, 0.98) 0%, rgba(0, 216, 243, 0.92) 52%, rgba(30, 64, 175, 0.88) 100%)",
               boxShadow: "0 22px 40px rgba(15, 23, 42, 0.14)",
             }}
           >
@@ -1166,7 +1166,7 @@ const Dashboard: React.FC = () => {
                     countTone="green"
                     data={topDealers}
                     emptyText="No dealer bills found for this filter"
-                    borderColor="1px solid rgba(0, 105, 92, 0.08)"
+                    borderColor="1px solid rgba(0, 216, 243, 0.08)"
                     background="linear-gradient(180deg, #ffffff 0%, #f9fffd 100%)"
                     selectedMonth={selectedMonth}
                     selectedYear={selectedYear}
@@ -1186,7 +1186,7 @@ const Dashboard: React.FC = () => {
                     data={topRetailers}
                     emptyText="No completed retailer orders found for this filter"
                     borderColor="1px solid rgba(29, 78, 216, 0.08)"
-                    background="linear-gradient(180deg, #ffffff 0%, #f8fbff 100%)"
+                    background="linear-gradient(180deg, #ffffff 0%, #F1F7F8 100%)"
                     selectedMonth={selectedMonth}
                     selectedYear={selectedYear}
                     yearOptions={yearOptions}
@@ -1200,9 +1200,9 @@ const Dashboard: React.FC = () => {
                 bordered={false}
                 style={{
                   borderRadius: 18,
-                  border: "1px solid rgba(15, 118, 110, 0.08)",
+                  border: "1px solid rgba(0, 216, 243, 0.08)",
                   boxShadow: "0 10px 24px rgba(15, 23, 42, 0.05)",
-                  background: "linear-gradient(180deg, #ffffff 0%, #f7fbff 100%)",
+                  background: "linear-gradient(180deg, #ffffff 0%, #F1F7F8 100%)",
                   overflow: "hidden",
                 }}
                 bodyStyle={{ padding: 0 }}
@@ -1302,9 +1302,9 @@ const Dashboard: React.FC = () => {
                         <AreaChart data={revenueChartData} margin={{ top: 10, right: 16, left: 4, bottom: 6 }}>
                           <defs>
                             <linearGradient id="revenueAreaFill" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="0%" stopColor="#0f766e" stopOpacity={0.38} />
-                              <stop offset="70%" stopColor="#0ea5e9" stopOpacity={0.12} />
-                              <stop offset="100%" stopColor="#0ea5e9" stopOpacity={0.03} />
+                              <stop offset="0%" stopColor="#0067E8" stopOpacity={0.38} />
+                              <stop offset="70%" stopColor="#2A7794" stopOpacity={0.12} />
+                              <stop offset="100%" stopColor="#2A7794" stopOpacity={0.03} />
                             </linearGradient>
                           </defs>
                           <CartesianGrid strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.22)" vertical={false} />
@@ -1325,10 +1325,10 @@ const Dashboard: React.FC = () => {
                           <Area
                             type="monotone"
                             dataKey="totalRevenue"
-                            stroke="#0f766e"
+                            stroke="#0067E8"
                             strokeWidth={3}
                             fill="url(#revenueAreaFill)"
-                            activeDot={{ r: 6, fill: "#0ea5e9", stroke: "#ffffff", strokeWidth: 3 }}
+                            activeDot={{ r: 6, fill: "#2A7794", stroke: "#ffffff", strokeWidth: 3 }}
                           />
                         </AreaChart>
                       </ResponsiveContainer>
@@ -1355,9 +1355,9 @@ const Dashboard: React.FC = () => {
                 bordered={false}
                 style={{
                   borderRadius: 18,
-                  border: "1px solid rgba(124, 58, 237, 0.1)",
+                  border: "1px solid rgba(0, 216, 243, 0.1)",
                   boxShadow: "0 10px 24px rgba(15, 23, 42, 0.05)",
-                  background: "linear-gradient(180deg, #ffffff 0%, #fbf8ff 100%)",
+                  background: "linear-gradient(180deg, #ffffff 0%, #F1F7F8 100%)",
                   overflow: "hidden",
                 }}
                 bodyStyle={{ padding: 0 }}
@@ -1419,7 +1419,7 @@ const Dashboard: React.FC = () => {
                         </div>
                         <div style={{ display: "grid", gap: 2, textAlign: "right" }}>
                           <Text style={{ fontSize: 10, color: "#64748b" }}>Purchase Total</Text>
-                          <div style={{ fontWeight: 800, color: "#0f766e", fontSize: 14 }}>
+                          <div style={{ fontWeight: 800, color: "#0067E8", fontSize: 14 }}>
                             {formatRoundedCurrency(totalPurchaseChartAmount)}
                           </div>
                         </div>
@@ -1483,7 +1483,7 @@ const Dashboard: React.FC = () => {
                           />
                           <Tooltip
                             content={<ExpensePurchaseTooltip />}
-                            cursor={{ stroke: "rgba(99, 102, 241, 0.18)", strokeWidth: 2 }}
+                            cursor={{ stroke: "rgba(0, 216, 243, 0.18)", strokeWidth: 2 }}
                           />
                           <Legend />
                           <Line
@@ -1501,7 +1501,7 @@ const Dashboard: React.FC = () => {
                             type="monotone"
                             dataKey="purchaseAmount"
                             name="Purchase"
-                            stroke="#0f766e"
+                            stroke="#0067E8"
                             strokeWidth={3}
                             dot={false}
                             activeDot={false}

@@ -43,8 +43,8 @@ import "leaflet/dist/leaflet.css";
 
 const { Title, Text } = Typography;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 type AdminShop = {
@@ -114,8 +114,8 @@ const ShopLocationPicker: React.FC<{
       center={position}
       radius={10}
       pathOptions={{
-        color: "#00695C",
-        fillColor: "#14b8a6",
+        color: "#0067E8",
+        fillColor: "#00D8F3",
         fillOpacity: 0.78,
         weight: 3,
       }}
@@ -461,7 +461,7 @@ const ShopsPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -470,7 +470,7 @@ const ShopsPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
         }}
       >
         <Space
@@ -506,8 +506,8 @@ const ShopsPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add Shop
@@ -549,8 +549,8 @@ const ShopsPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -560,17 +560,17 @@ const ShopsPage: React.FC = () => {
         width={760}
         styles={{
           header: {
-            borderBottom: "1px solid rgba(0, 105, 92, 0.12)",
+            borderBottom: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "18px 22px",
             background:
-              "linear-gradient(135deg, rgba(224,247,246,0.95) 0%, rgba(255,255,255,1) 70%)",
+              "linear-gradient(135deg, rgba(232, 248, 246,0.95) 0%, rgba(255,255,255,1) 70%)",
           },
           body: {
             padding: "22px 24px 10px",
             background: "linear-gradient(180deg, #ffffff 0%, #fbfefd 100%)",
           },
           footer: {
-            borderTop: "1px solid rgba(0, 105, 92, 0.12)",
+            borderTop: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "16px 24px 20px",
             background: "#fff",
           },
@@ -699,7 +699,7 @@ const ShopsPage: React.FC = () => {
               marginTop: 16,
               padding: 14,
               borderRadius: 14,
-              border: "1px solid rgba(0, 105, 92, 0.12)",
+              border: "1px solid rgba(0, 216, 243, 0.12)",
               background: "linear-gradient(180deg, rgba(240,253,250,0.92) 0%, rgba(255,255,255,1) 100%)",
               display: "flex",
               justifyContent: "space-between",
@@ -723,7 +723,7 @@ const ShopsPage: React.FC = () => {
                 height: 42,
                 paddingInline: 18,
                 borderRadius: 12,
-                borderColor: "rgba(0, 105, 92, 0.2)",
+                borderColor: "rgba(0, 216, 243, 0.2)",
                 color: THEME.mid,
                 fontWeight: 600,
               }}
@@ -751,8 +751,8 @@ const ShopsPage: React.FC = () => {
         destroyOnClose
         okButtonProps={{
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -788,7 +788,7 @@ const ShopsPage: React.FC = () => {
               onClick={useCurrentLocation}
               style={{
                 borderRadius: 10,
-                borderColor: "rgba(0, 105, 92, 0.2)",
+                borderColor: "rgba(0, 216, 243, 0.2)",
                 color: THEME.mid,
                 fontWeight: 600,
               }}
@@ -801,7 +801,7 @@ const ShopsPage: React.FC = () => {
             style={{
               borderRadius: 16,
               overflow: "hidden",
-              border: "1px solid rgba(0, 105, 92, 0.12)",
+              border: "1px solid rgba(0, 216, 243, 0.12)",
             }}
           >
             <MapContainer

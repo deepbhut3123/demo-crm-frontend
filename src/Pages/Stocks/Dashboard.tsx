@@ -10,11 +10,11 @@ import "../Products/Index.css";
 const { Title, Text } = Typography;
 
 const THEME = {
-  dark: "#0f3d3e",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
   gold: "#d97706",
   red: "#dc2626",
-  blue: "#2563eb",
+  blue: "#168F86",
 };
 
 type ProductOption = {
@@ -432,7 +432,7 @@ const StocksDashboardPage: React.FC = () => {
           placeItems: "center",
           padding: 20,
           background:
-            "radial-gradient(circle at top left, rgba(13, 148, 136, 0.14) 0%, rgba(13, 148, 136, 0) 32%), radial-gradient(circle at top right, rgba(37, 99, 235, 0.12) 0%, rgba(37, 99, 235, 0) 28%), linear-gradient(180deg, #f4fbfa 0%, #eef5fb 48%, #f8fafc 100%)",
+            "radial-gradient(circle at top left, rgba(0, 216, 243, 0.14) 0%, rgba(0, 216, 243, 0) 32%), radial-gradient(circle at top right, rgba(4, 27, 57, 0.12) 0%, rgba(4, 27, 57, 0) 28%), linear-gradient(180deg, #F4FBFA 0%, #F1F7F8 48%, #f8fafc 100%)",
         }}
       >
         <Spin size="large" />
@@ -447,7 +447,7 @@ const StocksDashboardPage: React.FC = () => {
         height: "calc(100vh - 50px)",
         overflowY: "auto",
         background:
-          "radial-gradient(circle at top left, rgba(13, 148, 136, 0.14) 0%, rgba(13, 148, 136, 0) 32%), radial-gradient(circle at top right, rgba(37, 99, 235, 0.12) 0%, rgba(37, 99, 235, 0) 28%), linear-gradient(180deg, #f4fbfa 0%, #eef5fb 48%, #f8fafc 100%)",
+          "radial-gradient(circle at top left, rgba(0, 216, 243, 0.14) 0%, rgba(0, 216, 243, 0) 32%), radial-gradient(circle at top right, rgba(4, 27, 57, 0.12) 0%, rgba(4, 27, 57, 0) 28%), linear-gradient(180deg, #F4FBFA 0%, #F1F7F8 48%, #f8fafc 100%)",
       }}
     >
       <Card
@@ -455,7 +455,7 @@ const StocksDashboardPage: React.FC = () => {
         style={{
           borderRadius: 22,
           overflow: "hidden",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           boxShadow: "0 18px 45px rgba(15, 23, 42, 0.08)",
           marginBottom: 20,
           background:
@@ -485,8 +485,8 @@ const StocksDashboardPage: React.FC = () => {
               style={{
                 padding: "10px 16px",
                 borderRadius: 16,
-                border: "1px solid rgba(0, 105, 92, 0.12)",
-                background: "rgba(224, 247, 246, 0.86)",
+                border: "1px solid rgba(0, 216, 243, 0.12)",
+                background: "rgba(232, 248, 246, 0.86)",
                 minWidth: 180,
               }}
             >
@@ -543,8 +543,8 @@ const StocksDashboardPage: React.FC = () => {
                         margin: 0,
                         borderRadius: 999,
                         padding: "6px 12px",
-                        border: "1px solid rgba(37, 99, 235, 0.12)",
-                        background: "rgba(37, 99, 235, 0.08)",
+                        border: "1px solid rgba(4, 27, 57, 0.12)",
+                        background: "rgba(4, 27, 57, 0.08)",
                         color: THEME.blue,
                         fontWeight: 700,
                       }}
@@ -626,8 +626,8 @@ const StocksDashboardPage: React.FC = () => {
                           margin: 0,
                           borderRadius: 999,
                           padding: "6px 12px",
-                          border: "1px solid rgba(0, 105, 92, 0.12)",
-                          background: "rgba(224, 247, 246, 0.8)",
+                          border: "1px solid rgba(0, 216, 243, 0.12)",
+                          background: "rgba(232, 248, 246, 0.8)",
                           color: THEME.mid,
                           fontWeight: 700,
                         }}
@@ -642,20 +642,20 @@ const StocksDashboardPage: React.FC = () => {
                           <AreaChart data={trendData} margin={{ top: 10, right: 10, left: -18, bottom: 0 }}>
                             <defs>
                               <linearGradient id="stockQtyFill" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="5%" stopColor="#0f766e" stopOpacity={0.36} />
-                                <stop offset="95%" stopColor="#0f766e" stopOpacity={0.02} />
+                                <stop offset="5%" stopColor="#0067E8" stopOpacity={0.36} />
+                                <stop offset="95%" stopColor="#0067E8" stopOpacity={0.02} />
                               </linearGradient>
                               <linearGradient id="stockValueFill" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="5%" stopColor="#2563eb" stopOpacity={0.28} />
-                                <stop offset="95%" stopColor="#2563eb" stopOpacity={0.02} />
+                                <stop offset="5%" stopColor="#168F86" stopOpacity={0.28} />
+                                <stop offset="95%" stopColor="#168F86" stopOpacity={0.02} />
                               </linearGradient>
                             </defs>
                             <CartesianGrid strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.18)" />
                             <XAxis dataKey="day" tick={{ fill: "#64748b", fontSize: 12 }} axisLine={false} tickLine={false} />
                             <YAxis tick={{ fill: "#64748b", fontSize: 12 }} axisLine={false} tickLine={false} />
                             <Tooltip />
-                            <Area type="monotone" dataKey="quantity" stroke="#0f766e" fill="url(#stockQtyFill)" strokeWidth={3} />
-                            <Area type="monotone" dataKey="value" stroke="#2563eb" fill="url(#stockValueFill)" strokeWidth={3} />
+                            <Area type="monotone" dataKey="quantity" stroke="#0067E8" fill="url(#stockQtyFill)" strokeWidth={3} />
+                            <Area type="monotone" dataKey="value" stroke="#168F86" fill="url(#stockValueFill)" strokeWidth={3} />
                           </AreaChart>
                         </ResponsiveContainer>
                       </div>
@@ -686,7 +686,7 @@ const StocksDashboardPage: React.FC = () => {
                           value: formatCurrency(monthValue),
                           icon: <InboxOutlined />,
                           color: THEME.mid,
-                          background: "rgba(224, 247, 246, 0.9)",
+                          background: "rgba(232, 248, 246, 0.9)",
                         },
                         {
                           title: "Low / Empty Products",

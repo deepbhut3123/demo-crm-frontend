@@ -48,8 +48,8 @@ type ExpenseEntryFormValues = {
 };
 
 const THEME = {
-  dark: "#0f3d3e",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 const EXPENSE_OPTIONS = [
@@ -293,7 +293,7 @@ const ExpenseEntriesPage: React.FC = () => {
         padding: 20,
         minHeight: "calc(100vh - 50px)",
         background:
-          "radial-gradient(circle at top left, rgba(13, 148, 136, 0.12) 0%, rgba(13, 148, 136, 0) 32%), linear-gradient(180deg, #f7fcfb 0%, #eff7f5 42%, #f8fafc 100%)",
+          "radial-gradient(circle at top left, rgba(0, 216, 243, 0.12) 0%, rgba(0, 216, 243, 0) 32%), linear-gradient(180deg, #f7fcfb 0%, #eff7f5 42%, #f8fafc 100%)",
       }}
     >
       <Card
@@ -301,7 +301,7 @@ const ExpenseEntriesPage: React.FC = () => {
         style={{
           borderRadius: 24,
           overflow: "hidden",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           boxShadow: "0 18px 45px rgba(15, 23, 42, 0.08)",
           background: "linear-gradient(180deg, #ffffff 0%, #f8fbfb 100%)",
         }}
@@ -330,8 +330,8 @@ const ExpenseEntriesPage: React.FC = () => {
               style={{
                 padding: "10px 16px",
                 borderRadius: 16,
-                border: "1px solid rgba(0, 105, 92, 0.12)",
-                background: "linear-gradient(135deg, rgba(224, 247, 246, 0.92) 0%, rgba(240, 253, 250, 0.98) 100%)",
+                border: "1px solid rgba(0, 216, 243, 0.12)",
+                background: "linear-gradient(135deg, rgba(232, 248, 246, 0.92) 0%, rgba(240, 253, 250, 0.98) 100%)",
                 minWidth: 180,
               }}
             >
@@ -375,7 +375,7 @@ const ExpenseEntriesPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 700,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
               }}
             >
               Add Expense
@@ -412,8 +412,8 @@ const ExpenseEntriesPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}

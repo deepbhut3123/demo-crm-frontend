@@ -1,46 +1,11 @@
-# Getting Started with Create React App
+# Logic Grid CRM client demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Run `npm.cmd start` from this directory and open `http://localhost:3000`.
 
-## Available Scripts
+The app opens without a login. It contains sample data for leads, contacts, companies, deals, tasks, activities, support tickets, and campaigns. The dashboard and reports use the same records as the modules.
 
-In the project directory, you can run:
+AI automation is the featured experience. Open **AI Automations** to score and qualify leads, create instant follow-ups, rescue late-stage deals, turn meetings into next steps, triage tickets, and generate a weekly sales digest. These workflows update the same browser-local demo records, so every run has a visible result in the related CRM module.
 
-### `npm start`
+Try converting a lead to create a contact, company, deal, and activity. On Deals, switch between table and pipeline views and change a deal's stage. Add, edit, delete, search, and filter records to demonstrate everyday CRM work. Changes stay in this browser's local storage; **Reset demo** restores the original sample records.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This is a presentation demo. Its AI behavior is deterministic and runs locally against sample data; it does not call an external AI model, connect to the legacy ERP API, send emails, or sync data across users or devices.

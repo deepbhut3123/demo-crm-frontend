@@ -1,5 +1,5 @@
 .online-module-row:hover > td {
-  background: #f0fffd !important;
+  background: #E8F4FD !important;
 }
 
 .online-module-row td {
@@ -7,8 +7,8 @@
 }
 
 .online-module-table .ant-table-thead > tr > th {
-  background: #f0faf8;
-  color: #004d40;
+  background: #EFF9F8;
+  color: #041B39;
 }
 
 .online-module-table .ant-table-tbody > tr > td {
@@ -34,7 +34,7 @@
 .online-order-filters .ant-select-selector,
 .online-order-filters .ant-picker {
   border-radius: 10px !important;
-  border-color: #cfe0db !important;
+  border-color: #C5E4E0 !important;
   box-shadow: none !important;
 }
 
@@ -42,8 +42,8 @@
 .online-order-filters .ant-select-focused .ant-select-selector,
 .online-order-filters .ant-picker:hover,
 .online-order-filters .ant-picker-focused {
-  border-color: #0f766e !important;
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08) !important;
+  border-color: #0067E8 !important;
+  box-shadow: 0 0 0 3px rgba(0, 216, 243, 0.08) !important;
 }
 
 .online-order-actions {
@@ -83,11 +83,11 @@
 }
 
 .online-order-action-btn--edit.ant-btn {
-  color: #0f766e;
+  color: #0067E8;
 }
 
 .online-order-action-btn--edit.ant-btn:not(:disabled):hover {
-  color: #0b5f59;
+  color: #041B39;
 }
 
 .online-order-action-btn--deliver.ant-btn {
@@ -99,11 +99,11 @@
 }
 
 .online-order-action-btn--payment.ant-btn {
-  color: #2563eb;
+  color: #168F86;
 }
 
 .online-order-action-btn--payment.ant-btn:not(:disabled):hover {
-  color: #1d4ed8;
+  color: #041B39;
 }
 
 .online-order-action-btn--delete.ant-btn {
@@ -137,7 +137,7 @@
   display: flex;
   align-items: center;
   border-radius: 10px !important;
-  border-color: #cfe0db !important;
+  border-color: #C5E4E0 !important;
   background: #ffffff !important;
   transition:
     border-color 0.18s ease,
@@ -146,8 +146,8 @@
 
 .online-customer-picker__select.ant-select:hover .ant-select-selector,
 .online-customer-picker__select.ant-select-focused .ant-select-selector {
-  border-color: #0f766e !important;
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08) !important;
+  border-color: #0067E8 !important;
+  box-shadow: 0 0 0 3px rgba(0, 216, 243, 0.08) !important;
 }
 
 .online-customer-picker__select .ant-select-selection-placeholder,
@@ -161,10 +161,10 @@
   min-width: 42px;
   height: 36px;
   border-radius: 10px;
-  border: 1px solid #00695c;
+  border: 1px solid #0067E8;
   color: #ffffff;
-  background: linear-gradient(135deg, #00695c 0%, #0f766e 100%);
-  box-shadow: 0 7px 16px rgba(0, 105, 92, 0.22);
+  background: linear-gradient(135deg, #0067E8 0%, #00D8F3 100%);
+  box-shadow: 0 7px 16px rgba(0, 216, 243, 0.22);
   transition:
     transform 0.18s ease,
     border-color 0.18s ease,
@@ -179,9 +179,9 @@
 
 .online-customer-picker__add-btn.ant-btn:hover {
   color: #ffffff !important;
-  border-color: #004d40 !important;
-  background: linear-gradient(135deg, #004d40 0%, #0b5f59 100%) !important;
-  box-shadow: 0 10px 22px rgba(0, 105, 92, 0.28);
+  border-color: #041B39 !important;
+  background: linear-gradient(135deg, #041B39 0%, #041B39 100%) !important;
+  box-shadow: 0 10px 22px rgba(0, 216, 243, 0.28);
   transform: translateY(-1px);
 }
 
@@ -199,7 +199,7 @@
 }
 
 .online-module-modal .ant-modal-title {
-  color: #004d40;
+  color: #041B39;
   font-weight: 700;
 }
 
@@ -212,7 +212,7 @@
 }
 
 .online-module-modal .ant-form-item-label > label {
-  color: #004d40;
+  color: #041B39;
   font-weight: 600;
 }
 

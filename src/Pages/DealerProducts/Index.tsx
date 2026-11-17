@@ -32,8 +32,8 @@ import "../Products/Index.css";
 
 const { Title } = Typography;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 type DealerProductItem = {
@@ -324,7 +324,7 @@ const DealerProductsPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -333,7 +333,7 @@ const DealerProductsPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -396,8 +396,8 @@ const DealerProductsPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add Product
@@ -476,8 +476,8 @@ const DealerProductsPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}

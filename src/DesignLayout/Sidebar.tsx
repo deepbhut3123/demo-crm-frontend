@@ -249,10 +249,10 @@ const Sidebar: React.FC<SidebarProps> = ({
   disableHover,
   onItemClick,
 }) => {
-  const ACTIVE_LIGHT_COLOR = "#E0F7F6";
-  const DEFAULT_ICON_COLOR = "#00695C";
-  const DEFAULT_TEXT_COLOR = "#004D40";
-  const Logo_Main = require("../Assets/VEERRAJLOGOR.jpg");
+  const ACTIVE_LIGHT_COLOR = "#FFFFFF";
+  const DEFAULT_ICON_COLOR = "#00D8F3";
+  const DEFAULT_TEXT_COLOR = "#FFFFFF";
+  const darkLogo = `${process.env.PUBLIC_URL}/Logic-Grid Logo.svg`;
   const navigate = useNavigate();
   const location = useLocation();
   const [isHovering, setIsHovering] = useState(false);
@@ -326,9 +326,9 @@ const Sidebar: React.FC<SidebarProps> = ({
       "/account-deletion-requests": "Account Deletion Requests",
     };
 
-    let title = "VEERRAAJ FOODS";
+    let title = "Logic Grid";
     if (routeTitles[location.pathname]) {
-      title = `${routeTitles[location.pathname]} | VEERRAAJ FOODS`;
+      title = `${routeTitles[location.pathname]} | Logic Grid`;
     }
 
     document.title = title;
@@ -477,24 +477,24 @@ const Sidebar: React.FC<SidebarProps> = ({
           open={!collapsed}
           maskClosable
           bodyStyle={{
-            backgroundColor: "#001529",
+            backgroundColor: "#041B39",
             padding: 0,
             overflowY: "auto",
           }}
         >
           <div
             style={{
-              backgroundColor: "#001529",
-              padding: "1rem 0",
+              backgroundColor: "#041B39",
+              padding: "1.2rem 1rem 0.8rem",
               display: "flex",
               justifyContent: "center",
             }}
           >
             <img
-              src={Logo_Main}
-              alt="logo"
+              src={darkLogo}
+              alt="Logic Grid"
               onClick={handleLogoClick}
-              style={{ maxHeight: "8vw", cursor: "pointer" }}
+              style={{ maxHeight: "54px", maxWidth: "190px", width: "100%", objectFit: "contain", cursor: "pointer" }}
             />
           </div>
           <Menu
@@ -523,27 +523,29 @@ const Sidebar: React.FC<SidebarProps> = ({
             height: "100vh",
             zIndex: 1000,
             overflow: "hidden",
-            background: "linear-gradient(180deg, #E0F7F6 0%, #B2DFDB 100%)",
+            background: "#041B39",
           }}
         >
           <div
             style={{
               textAlign: "center",
-              backgroundColor: "#E0F7F6",
+              backgroundColor: "#041B39",
               marginBottom: "10px",
-              padding: "10px 0",
+              padding: "16px 12px 6px",
               display: "flex",
               justifyContent: "center",
             }}
           >
             <img
-              src={Logo_Main}
-              alt="logo"
+              src={darkLogo}
+              alt="Logic Grid"
               onClick={handleLogoClick}
               style={{
-                maxHeight: "70px",
+                maxHeight: "52px",
+                maxWidth: collapsed && !isHovering ? "52px" : "190px",
+                objectFit: "contain",
                 transition: "all 0.2s",
-                width: collapsed ? "60px" : "auto",
+                width: collapsed && !isHovering ? "48px" : "100%",
                 cursor: "pointer",
               }}
             />
@@ -551,6 +553,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
           <Menu
             mode="inline"
+            theme="dark"
             selectedKeys={[activeMenuItemKey || ""]}
             openKeys={normalizedOpenKeys}
             onOpenChange={(keys) => setOpenKeys(keys as string[])}

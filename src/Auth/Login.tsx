@@ -8,7 +8,7 @@ import "./Login.css";
 const Login: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { setAuthData } = useContext(AuthContext);
-  const Logo_Main = require("../Assets/VEERRAJLOGOR.jpg");
+  const Logo_Main = `${process.env.PUBLIC_URL}/Logic-Grid Logo.svg`;
   const navigate = useNavigate();
 
   const onFinish = async (values: any) => {
@@ -49,7 +49,7 @@ const Login: React.FC = () => {
         <div className="login-content">
           <img
             src={Logo_Main}
-            alt="Veerraj Logo"
+            alt="Logic Grid"
             className="w-52 h-28 mx-auto mb-10"
           />
           <h2 className="login-title">Welcome Back</h2>

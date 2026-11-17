@@ -38,8 +38,8 @@ import {
 const { Title, Text } = Typography;
 const { RangePicker } = DatePicker;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 type DealerOption = {
@@ -165,9 +165,9 @@ const getStatusTagStyle = (status?: string): React.CSSProperties => {
   const normalized = normalizeStatus(status);
   if (normalized === "shipped") {
     return {
-      color: "#00695C",
-      background: "rgba(0, 105, 92, 0.1)",
-      borderColor: "rgba(0, 105, 92, 0.24)",
+      color: "#0067E8",
+      background: "rgba(0, 216, 243, 0.1)",
+      borderColor: "rgba(0, 216, 243, 0.24)",
     };
   }
   if (normalized === "ordered") {
@@ -179,9 +179,9 @@ const getStatusTagStyle = (status?: string): React.CSSProperties => {
   }
   if (normalized === "completed") {
     return {
-      color: "#1d4ed8",
-      background: "rgba(59, 130, 246, 0.12)",
-      borderColor: "rgba(59, 130, 246, 0.24)",
+      color: "#041B39",
+      background: "rgba(4, 27, 57, 0.12)",
+      borderColor: "rgba(4, 27, 57, 0.24)",
     };
   }
   if (normalized === "cancelled") {
@@ -841,7 +841,7 @@ const DealerBillsPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -850,7 +850,7 @@ const DealerBillsPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -894,8 +894,8 @@ const DealerBillsPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add New Bill
@@ -953,8 +953,8 @@ const DealerBillsPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -1548,8 +1548,8 @@ const DealerBillsPage: React.FC = () => {
                   style={{
                     padding: "10px 14px",
                     borderRadius: 12,
-                    border: "1px solid rgba(0, 105, 92, 0.15)",
-                    background: "rgba(0, 105, 92, 0.06)",
+                    border: "1px solid rgba(0, 216, 243, 0.15)",
+                    background: "rgba(0, 216, 243, 0.06)",
                   }}
                 >
                   <Text strong>

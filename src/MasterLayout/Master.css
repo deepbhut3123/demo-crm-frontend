@@ -45,7 +45,7 @@
 }
 
 .mobile-screen-sidebar {
-    background-color: #0080ff !important;
+    background-color: #041B39 !important;
     position: fixed !important;
     height: 100vh !important;
     overflow-y: auto !important;
@@ -81,9 +81,9 @@
 }
 
 .ant-layout-sider-trigger {
-    background-color: #0080ff !important;
+    background-color: #041B39 !important;
     /* Set to your sidebar background color */
-    border-top: 1px solid #0080ff !important;
+    border-top: 1px solid #00D8F3 !important;
     /* Optional border styling to match your sidebar */
     color: #fff;
     /* Set the text color to white or the desired color */
@@ -94,7 +94,7 @@
 }
 
 .ant-drawer-body {
-    background-color: #001529;
+    background-color: #041B39;
 }
 
 /* Create a new CSS file or add to your existing one */
@@ -105,34 +105,33 @@
     background-color: #111; /* Background color for the sidebar */
     color: #818181; /* Text color */
   }
-  
+
   .sidebar-menu,
   .sidebar-menu-active {
     transition: background-color 0.3s, color 0.3s;
   }
-  
+
   /* Hover effect */
   .sidebar-menu:hover,
   .sidebar-menu-active:hover {
     background-color: #333; /* Hover background color */
   }
-  
+
   /* Logo styles */
   .sidebar-logo {
     max-height: 50px; /* Adjust the logo height */
   }
-  
+
   /* Submenu item styles */
   .ant-menu-submenu-title {
-     color: #818181; /*Submenu text color */
+     color: #FFFFFF;
   }
-  
   .ant-menu-submenu-title:hover {
     color: #fff; /* Submenu hover text color */
   }
-  
+
   .sidebar-menu-active {
-    background-color: #1890ff; /* Set the background color for the active menu item */
+    background-color: #0067E8; /* Set the background color for the active menu item */
     color: #fff; /* Set the text color for the active menu item */
   }
-  
+

@@ -86,8 +86,8 @@ type DealerOrder = {
 };
 
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 const formatRoundedCurrency = (value?: number) =>
@@ -477,7 +477,7 @@ const OrdersPage: React.FC = () => {
     <div
       style={{
         padding: 20,
-        background: "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+        background: "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -486,7 +486,7 @@ const OrdersPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -560,8 +560,8 @@ const OrdersPage: React.FC = () => {
         width={820}
         okButtonProps={{
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -766,8 +766,8 @@ const OrdersPage: React.FC = () => {
         onCancel={closeShipModal}
         okButtonProps={{
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}

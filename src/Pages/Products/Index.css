@@ -1,5 +1,5 @@
 .product-row:hover > td {
-  background: #f0fffd !important;
+  background: #E8F4FD !important;
 }
 
 .product-row td {
@@ -18,6 +18,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #00695c;
+  color: #0067E8;
   font-size: 18px;
 }

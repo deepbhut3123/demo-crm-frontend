@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --brand-navy: #041B39;
+  --brand-primary: #0067E8;
+  --brand-primary-dark: #0052BE;
+  --brand-cyan: #00D8F3;
+  --brand-cyan-dark: #00BCE9;
+  --brand-tint: #E8F4FD;
+  --brand-surface: #FFFFFF;
+  --brand-page: #F4F8FC;
+  --brand-border: #D2E3F0;
+
+  /* Backward-compatible aliases mapped to new brand colors */
+  --brand-teal: #00D8F3;
+  --brand-teal-dark: #0067E8;
+  --brand-teal-tint: #E8F4FD;
+}

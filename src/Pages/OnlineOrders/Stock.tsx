@@ -30,8 +30,8 @@ import "./Index.css";
 
 const { Title, Text } = Typography;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 type OnlineProductItem = {
@@ -439,7 +439,7 @@ const OnlineStockPage: React.FC = () => {
               onClick={() => openEntryDetails(record)}
               icon={<EyeOutlined />}
               style={{
-                color: "#2563eb",
+                color: "#168F86",
                 borderRadius: 10,
                 width: 36,
                 height: 36,
@@ -477,7 +477,7 @@ const OnlineStockPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -486,7 +486,7 @@ const OnlineStockPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -516,7 +516,7 @@ const OnlineStockPage: React.FC = () => {
                 height: 40,
                 borderRadius: 12,
                 color: THEME.mid,
-                borderColor: "rgba(0, 105, 92, 0.22)",
+                borderColor: "rgba(0, 216, 243, 0.22)",
                 fontWeight: 600,
               }}
             >
@@ -532,8 +532,8 @@ const OnlineStockPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add Stock
@@ -553,7 +553,7 @@ const OnlineStockPage: React.FC = () => {
               bordered={false}
               style={{
                 borderRadius: 18,
-                border: "1px solid rgba(0, 105, 92, 0.08)",
+                border: "1px solid rgba(0, 216, 243, 0.08)",
                 boxShadow: "0 10px 24px rgba(15, 23, 42, 0.05)",
               }}
             >
@@ -568,7 +568,7 @@ const OnlineStockPage: React.FC = () => {
               bordered={false}
               style={{
                 borderRadius: 18,
-                border: "1px solid rgba(0, 105, 92, 0.08)",
+                border: "1px solid rgba(0, 216, 243, 0.08)",
                 boxShadow: "0 10px 24px rgba(15, 23, 42, 0.05)",
               }}
             >
@@ -607,7 +607,7 @@ const OnlineStockPage: React.FC = () => {
           style: {
             borderRadius: 10,
             border: "none",
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
           },
         }}
         width={1100}

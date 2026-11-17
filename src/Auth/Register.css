@@ -10,6 +10,7 @@ body, html, #root {
   padding: 0;
   overflow: hidden;
   font-family: 'Inter', sans-serif;
+  background: #F4F8FC;
 }
 
 .register-wrapper {
@@ -17,7 +18,7 @@ body, html, #root {
   display: flex;
   align-items: center;
   justify-content: center;
-    background: linear-gradient(-45deg, #d5f5e3, #a3e4d7, #76d7c4, #a3e4d7, #d5f5e3);
+  background: linear-gradient(-45deg, #041B39, #083363, #0052BE, #0067E8, #00D8F3, #041B39);
   background-size: 300% 300%;
   animation: gradientBG 8s ease-in-out infinite;
 }
@@ -38,7 +39,8 @@ body, html, #root {
   background: white;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 50px rgba(4, 27, 57, 0.25);
+  border: 1px solid rgba(0, 216, 243, 0.15);
   width: 100%;
   max-width: 440px;
   z-index: 2;
@@ -47,13 +49,13 @@ body, html, #root {
 
 .register-title {
   font-size: 24px;
-  font-weight: 600;
-  color: #111827;
+  font-weight: 700;
+  color: #041B39;
   margin-bottom: 8px;
 }
 
 .register-subtitle {
-  color: #6b7280;
+  color: #5D7385;
   font-size: 14px;
   margin-bottom: 24px;
 }
@@ -67,30 +69,33 @@ body, html, #root {
   height: 44px;
   padding: 0 14px;
   border-radius: 10px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #D5E2EC;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-input:focus {
-  border-color: #8aa694;
-  box-shadow: 0 0 0 2px rgba(138, 166, 148, 0.2);
+  border-color: #0067E8;
+  box-shadow: 0 0 0 2px rgba(0, 103, 232, 0.2);
   outline: none;
 }
 
 .register-button {
   width: 100%;
   height: 44px;
-  background-color: #134d2a;
+  background-color: #0067E8;
   color: white;
-  font-weight: 500;
+  font-weight: 650;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.2s;
+  box-shadow: 0 6px 18px rgba(0, 103, 232, 0.25);
 }
 
 .register-button:hover {
-  background-color: #8aa694;
+  background-color: #0052BE;
+  box-shadow: 0 8px 22px rgba(0, 103, 232, 0.35);
+  transform: translateY(-1px);
 }
 
 .register-button:disabled {
@@ -101,16 +106,16 @@ body, html, #root {
 .register-footer {
   margin-top: 24px;
   font-size: 13px;
-  color: #6b7280;
+  color: #5D7385;
 }
 
 .register-link {
-  color: #134d2a;
+  color: #0067E8;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .register-link:hover {
   text-decoration: underline;
-  color: #8aa694;
+  color: #0052BE;
 }

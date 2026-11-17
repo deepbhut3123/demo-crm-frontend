@@ -59,16 +59,16 @@ type UserFormValues = {
 };
 
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 const statusMeta = (isActive: boolean) =>
   isActive
     ? {
         label: "Active",
-        color: "#0f766e",
-        background: "rgba(0, 105, 92, 0.08)",
+        color: "#0067E8",
+        background: "rgba(0, 216, 243, 0.08)",
       }
     : {
         label: "Inactive",
@@ -285,7 +285,7 @@ const UsersPage: React.FC = () => {
             onChange={(checked) => toggleStatus(record, checked)}
             size="small"
             style={{
-              backgroundColor: record.isActive ? "#0f766e" : "#94a3b8",
+              backgroundColor: record.isActive ? "#0067E8" : "#94a3b8",
             }}
           />
           <Tag
@@ -362,7 +362,7 @@ const UsersPage: React.FC = () => {
       style={{
         padding: 12,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
         height: "calc(100vh - 50px)",
         overflow: "hidden",
@@ -374,7 +374,7 @@ const UsersPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
           height: "100%",
         }}
@@ -404,8 +404,8 @@ const UsersPage: React.FC = () => {
               border: "none",
               color: "#fff",
               fontWeight: 600,
-              background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-              boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+              background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+              boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
             }}
           >
             Add User
@@ -457,8 +457,8 @@ const UsersPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -468,17 +468,17 @@ const UsersPage: React.FC = () => {
         width={720}
         styles={{
           header: {
-            borderBottom: "1px solid rgba(0, 105, 92, 0.12)",
+            borderBottom: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "18px 22px",
             background:
-              "linear-gradient(135deg, rgba(224,247,246,0.95) 0%, rgba(255,255,255,1) 70%)",
+              "linear-gradient(135deg, rgba(232, 248, 246,0.95) 0%, rgba(255,255,255,1) 70%)",
           },
           body: {
             padding: "22px 24px 10px",
             background: "linear-gradient(180deg, #ffffff 0%, #fbfefd 100%)",
           },
           footer: {
-            borderTop: "1px solid rgba(0, 105, 92, 0.12)",
+            borderTop: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "16px 24px 20px",
             background: "#fff",
           },

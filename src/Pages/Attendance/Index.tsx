@@ -89,9 +89,9 @@ type AttendanceStatementFormValues = {
 };
 
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
-  soft: "#E0F7F6",
+  dark: "#041B39",
+  mid: "#0067E8",
+  soft: "#E8F4FD",
 };
 
 const ATTENDANCE_TIME_FORMATS = [
@@ -834,7 +834,7 @@ const AttendancePage: React.FC = () => {
           display: "grid",
           placeItems: "center",
           background:
-            "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+            "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
           padding: 20,
         }}
       >
@@ -862,7 +862,7 @@ const AttendancePage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -871,7 +871,7 @@ const AttendancePage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -904,8 +904,8 @@ const AttendancePage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Statement
@@ -917,7 +917,7 @@ const AttendancePage: React.FC = () => {
                 height: 42,
                 paddingInline: 18,
                 borderRadius: 12,
-                borderColor: "rgba(0, 105, 92, 0.24)",
+                borderColor: "rgba(0, 216, 243, 0.24)",
                 color: THEME.mid,
                 fontWeight: 600,
               }}
@@ -933,7 +933,7 @@ const AttendancePage: React.FC = () => {
             marginBottom: 20,
             borderRadius: 16,
             background: `linear-gradient(135deg, ${THEME.soft} 0%, #ffffff 100%)`,
-            border: "1px solid rgba(0, 105, 92, 0.1)",
+            border: "1px solid rgba(0, 216, 243, 0.1)",
           }}
           bodyStyle={{ padding: 16 }}
         >
@@ -1010,8 +1010,8 @@ const AttendancePage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -1021,17 +1021,17 @@ const AttendancePage: React.FC = () => {
         width={720}
         styles={{
           header: {
-            borderBottom: "1px solid rgba(0, 105, 92, 0.12)",
+            borderBottom: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "18px 22px",
             background:
-              "linear-gradient(135deg, rgba(224,247,246,0.95) 0%, rgba(255,255,255,1) 70%)",
+              "linear-gradient(135deg, rgba(232, 248, 246,0.95) 0%, rgba(255,255,255,1) 70%)",
           },
           body: {
             padding: "22px 24px 10px",
             background: "linear-gradient(180deg, #ffffff 0%, #fbfefd 100%)",
           },
           footer: {
-            borderTop: "1px solid rgba(0, 105, 92, 0.12)",
+            borderTop: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "16px 24px 20px",
             background: "#fff",
           },
@@ -1199,8 +1199,8 @@ const AttendancePage: React.FC = () => {
         okButtonProps={{
           loading: statementGenerating,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -1210,17 +1210,17 @@ const AttendancePage: React.FC = () => {
         width={620}
         styles={{
           header: {
-            borderBottom: "1px solid rgba(0, 105, 92, 0.12)",
+            borderBottom: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "18px 22px",
             background:
-              "linear-gradient(135deg, rgba(224,247,246,0.95) 0%, rgba(255,255,255,1) 70%)",
+              "linear-gradient(135deg, rgba(232, 248, 246,0.95) 0%, rgba(255,255,255,1) 70%)",
           },
           body: {
             padding: "22px 24px 10px",
             background: "linear-gradient(180deg, #ffffff 0%, #fbfefd 100%)",
           },
           footer: {
-            borderTop: "1px solid rgba(0, 105, 92, 0.12)",
+            borderTop: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "16px 24px 20px",
             background: "#fff",
           },

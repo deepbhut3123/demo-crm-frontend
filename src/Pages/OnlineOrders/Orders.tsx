@@ -48,15 +48,15 @@ import "./Index.css";
 
 const { Title, Text } = Typography;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 const LABEL_SENDER = {
   name: "VEERRAAJ FOODS",
   city: "AHMEDABAD",
   phone: "90994 00116",
 };
-const LABEL_LOGO_SRC = `${window.location.origin}/VEERRAJLOGOR.jpg`;
+const LABEL_LOGO_SRC = `${window.location.origin}/Logic-Grid Logo.svg`;
 const PAYMENT_FILTER_OPTIONS = [
   { value: "all", label: "All Payment" },
   { value: "paid", label: "Paid" },
@@ -906,7 +906,7 @@ const OnlineOrdersPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -915,7 +915,7 @@ const OnlineOrdersPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -946,10 +946,10 @@ const OnlineOrdersPage: React.FC = () => {
                 height: 42,
                 paddingInline: 18,
                 borderRadius: 12,
-                border: "1px solid rgba(37, 99, 235, 0.18)",
+                border: "1px solid rgba(4, 27, 57, 0.18)",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)",
+                background: "linear-gradient(135deg, #168F86 0%, #041B39 100%)",
               }}
             >
               Copy Selected
@@ -964,8 +964,8 @@ const OnlineOrdersPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add Order
@@ -1048,7 +1048,7 @@ const OnlineOrdersPage: React.FC = () => {
           style: {
             borderRadius: 10,
             border: "none",
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
           },
         }}
         width={1150}
@@ -1250,7 +1250,7 @@ const OnlineOrdersPage: React.FC = () => {
           style: {
             borderRadius: 10,
             border: "none",
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
           },
         }}
         width={560}
@@ -1301,7 +1301,7 @@ const OnlineOrdersPage: React.FC = () => {
           style: {
             borderRadius: 10,
             border: "none",
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
           },
         }}
         width={520}

@@ -163,8 +163,8 @@ type BillFormValues = {
 };
 
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 const formatCurrency = (value?: number) => {
@@ -200,9 +200,9 @@ const statusMeta = (status?: string): StatusStyle => {
   if (["complete", "completed", "order complete", "order completed", "settled"].includes(normalized)) {
     return {
       label: "Completed",
-      color: "#0f766e",
-      background: "rgba(0, 105, 92, 0.08)",
-      border: "rgba(0, 105, 92, 0.18)",
+      color: "#0067E8",
+      background: "rgba(0, 216, 243, 0.08)",
+      border: "rgba(0, 216, 243, 0.18)",
     };
   }
 
@@ -218,9 +218,9 @@ const statusMeta = (status?: string): StatusStyle => {
   if (["partial", "partially paid", "partially_paid"].includes(normalized)) {
     return {
       label: "Partial",
-      color: "#1d4ed8",
-      background: "rgba(59, 130, 246, 0.12)",
-      border: "rgba(59, 130, 246, 0.2)",
+      color: "#041B39",
+      background: "rgba(4, 27, 57, 0.12)",
+      border: "rgba(4, 27, 57, 0.2)",
     };
   }
 
@@ -245,9 +245,9 @@ const statusMeta = (status?: string): StatusStyle => {
   if (["shipped"].includes(normalized)) {
     return {
       label: "Shipped",
-      color: "#6d28d9",
-      background: "rgba(139, 92, 246, 0.12)",
-      border: "rgba(139, 92, 246, 0.2)",
+      color: "#0067E8",
+      background: "rgba(0, 216, 243, 0.12)",
+      border: "rgba(0, 216, 243, 0.2)",
     };
   }
 
@@ -616,7 +616,7 @@ const BillsPage: React.FC = () => {
             }
             h1 {
               margin: 0 0 8px;
-              color: #004d40;
+              color: #041B39;
             }
             .meta {
               margin-bottom: 8px;
@@ -636,7 +636,7 @@ const BillsPage: React.FC = () => {
             }
             th {
               background: #ecfdf5;
-              color: #004d40;
+              color: #041B39;
             }
             tfoot td {
               font-weight: 700;
@@ -754,8 +754,8 @@ const BillsPage: React.FC = () => {
             margin: 0,
             borderRadius: 999,
             padding: "2px 10px",
-            border: "1px solid rgba(0, 105, 92, 0.18)",
-            background: "rgba(0, 105, 92, 0.08)",
+            border: "1px solid rgba(0, 216, 243, 0.18)",
+            background: "rgba(0, 216, 243, 0.08)",
             color: THEME.dark,
             fontWeight: 600,
           }}
@@ -886,7 +886,7 @@ const BillsPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -895,7 +895,7 @@ const BillsPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -948,10 +948,10 @@ const BillsPage: React.FC = () => {
                   height: 42,
                   paddingInline: 18,
                   borderRadius: 12,
-                  border: "1px solid rgba(0, 105, 92, 0.18)",
+                  border: "1px solid rgba(0, 216, 243, 0.18)",
                   color: "#fff",
                   fontWeight: 600,
-                  background: "linear-gradient(135deg, #0f766e 0%, #0d9488 100%)",
+                  background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
                 }}
               >
                 Order Complete
@@ -965,10 +965,10 @@ const BillsPage: React.FC = () => {
                 height: 42,
                 paddingInline: 18,
                 borderRadius: 12,
-                border: "1px solid rgba(37, 99, 235, 0.18)",
+                border: "1px solid rgba(4, 27, 57, 0.18)",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)",
+                background: "linear-gradient(135deg, #168F86 0%, #041B39 100%)",
               }}
             >
               Generate Summary
@@ -987,8 +987,8 @@ const BillsPage: React.FC = () => {
                   border: "none",
                   color: "#fff",
                   fontWeight: 600,
-                  background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                  boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                  background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                  boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
                 }}
               />
             </Tooltip>
@@ -1050,8 +1050,8 @@ const BillsPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -1061,17 +1061,17 @@ const BillsPage: React.FC = () => {
         width={860}
         styles={{
           header: {
-            borderBottom: "1px solid rgba(0, 105, 92, 0.12)",
+            borderBottom: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "18px 22px",
             background:
-              "linear-gradient(135deg, rgba(224,247,246,0.95) 0%, rgba(255,255,255,1) 70%)",
+              "linear-gradient(135deg, rgba(232, 248, 246,0.95) 0%, rgba(255,255,255,1) 70%)",
           },
           body: {
             padding: "22px 24px 10px",
             background: "linear-gradient(180deg, #ffffff 0%, #fbfefd 100%)",
           },
           footer: {
-            borderTop: "1px solid rgba(0, 105, 92, 0.12)",
+            borderTop: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "16px 24px 20px",
             background: "#fff",
           },
@@ -1408,8 +1408,8 @@ const BillsPage: React.FC = () => {
                   style={{
                     padding: "10px 14px",
                     borderRadius: 12,
-                    border: "1px solid rgba(0, 105, 92, 0.15)",
-                    background: "rgba(0, 105, 92, 0.06)",
+                    border: "1px solid rgba(0, 216, 243, 0.15)",
+                    background: "rgba(0, 216, 243, 0.06)",
                   }}
                 >
                   <Text strong>Total Amount : {formatCurrency(getBillAmount(activeBill))}</Text>

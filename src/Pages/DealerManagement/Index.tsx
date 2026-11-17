@@ -33,8 +33,8 @@ import {
 
 const { Title, Text } = Typography;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 const formatAmount = (value?: number) =>
@@ -58,24 +58,24 @@ const getPaymentTypeTone = (value?: string) => {
 
   if (normalized === "bank") {
     return {
-      text: "#1d4ed8",
-      background: "rgba(59, 130, 246, 0.12)",
-      border: "1px solid rgba(59, 130, 246, 0.22)",
+      text: "#041B39",
+      background: "rgba(4, 27, 57, 0.12)",
+      border: "1px solid rgba(4, 27, 57, 0.22)",
     };
   }
 
   if (normalized === "online") {
     return {
-      text: "#7c3aed",
-      background: "rgba(124, 58, 237, 0.12)",
-      border: "1px solid rgba(124, 58, 237, 0.2)",
+      text: "#00D8F3",
+      background: "rgba(0, 216, 243, 0.12)",
+      border: "1px solid rgba(0, 216, 243, 0.2)",
     };
   }
 
   return {
-    text: "#0f766e",
-    background: "rgba(15, 118, 110, 0.12)",
-    border: "1px solid rgba(15, 118, 110, 0.2)",
+    text: "#0067E8",
+    background: "rgba(0, 216, 243, 0.12)",
+    border: "1px solid rgba(0, 216, 243, 0.2)",
   };
 };
 
@@ -411,7 +411,7 @@ const DealerPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -420,7 +420,7 @@ const DealerPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -478,8 +478,8 @@ const DealerPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add Dealer
@@ -525,8 +525,8 @@ const DealerPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -651,8 +651,8 @@ const DealerPage: React.FC = () => {
                 padding: "22px 24px",
                 borderRadius: 22,
                 background:
-                  "linear-gradient(135deg, rgba(0, 105, 92, 0.1) 0%, rgba(224, 247, 246, 0.95) 55%, rgba(255, 255, 255, 0.98) 100%)",
-                border: "1px solid rgba(0, 105, 92, 0.12)",
+                  "linear-gradient(135deg, rgba(0, 216, 243, 0.1) 0%, rgba(232, 248, 246, 0.95) 55%, rgba(255, 255, 255, 0.98) 100%)",
+                border: "1px solid rgba(0, 216, 243, 0.12)",
                 boxShadow: "0 18px 38px rgba(15, 23, 42, 0.08)",
                 display: "grid",
                 gridTemplateColumns: "minmax(220px, 1.2fr) repeat(3, minmax(0, 1fr))",
@@ -674,7 +674,7 @@ const DealerPage: React.FC = () => {
                       fontWeight: 700,
                       letterSpacing: 1.2,
                       textTransform: "uppercase",
-                      color: "#0f766e",
+                      color: "#0067E8",
                     }}
                   >
                     Dealer Statement
@@ -691,7 +691,7 @@ const DealerPage: React.FC = () => {
                     padding: "14px 16px",
                     borderRadius: 16,
                     background: "rgba(255, 255, 255, 0.82)",
-                    border: "1px solid rgba(0, 105, 92, 0.12)",
+                    border: "1px solid rgba(0, 216, 243, 0.12)",
                   }}
                 >
                   <Text style={{ display: "block", color: "#64748b", fontSize: 12 }}>
@@ -706,7 +706,7 @@ const DealerPage: React.FC = () => {
                     padding: "14px 16px",
                     borderRadius: 16,
                     background: "rgba(255, 255, 255, 0.82)",
-                    border: "1px solid rgba(0, 105, 92, 0.12)",
+                    border: "1px solid rgba(0, 216, 243, 0.12)",
                   }}
                 >
                   <Text style={{ display: "block", color: "#64748b", fontSize: 12 }}>
@@ -766,7 +766,7 @@ const DealerPage: React.FC = () => {
                 loading={detailsLoading}
                 style={{
                   borderRadius: 20,
-                  border: "1px solid rgba(0, 105, 92, 0.08)",
+                  border: "1px solid rgba(0, 216, 243, 0.08)",
                   boxShadow: "0 10px 28px rgba(15, 23, 42, 0.07)",
                   overflow: "hidden",
                 }}
@@ -842,7 +842,7 @@ const DealerPage: React.FC = () => {
                             borderRadius: 16,
                             background:
                               "linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,250,252,0.98) 100%)",
-                            border: "1px solid rgba(0, 105, 92, 0.08)",
+                            border: "1px solid rgba(0, 216, 243, 0.08)",
                             boxShadow: "0 8px 20px rgba(15, 23, 42, 0.05)",
                           }}
                         >
@@ -862,8 +862,8 @@ const DealerPage: React.FC = () => {
                                 padding: "6px 10px",
                                 textAlign: "center",
                                 borderRadius: 999,
-                                background: "rgba(0, 105, 92, 0.1)",
-                                color: "#0f766e",
+                                background: "rgba(0, 216, 243, 0.1)",
+                                color: "#0067E8",
                                 fontWeight: 700,
                                 fontSize: 13,
                               }}
@@ -911,7 +911,7 @@ const DealerPage: React.FC = () => {
                 loading={detailsLoading}
                 style={{
                   borderRadius: 20,
-                  border: "1px solid rgba(0, 105, 92, 0.08)",
+                  border: "1px solid rgba(0, 216, 243, 0.08)",
                   boxShadow: "0 10px 28px rgba(15, 23, 42, 0.07)",
                   overflow: "hidden",
                 }}
@@ -993,7 +993,7 @@ const DealerPage: React.FC = () => {
                               borderRadius: 16,
                               background:
                                 "linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,250,252,0.98) 100%)",
-                              border: "1px solid rgba(37, 99, 235, 0.08)",
+                              border: "1px solid rgba(4, 27, 57, 0.08)",
                               boxShadow: "0 8px 20px rgba(15, 23, 42, 0.05)",
                             }}
                           >
@@ -1030,8 +1030,8 @@ const DealerPage: React.FC = () => {
                                 style={{
                                   padding: "8px 12px",
                                   borderRadius: 12,
-                                  background: "rgba(37, 99, 235, 0.08)",
-                                  color: "#1d4ed8",
+                                  background: "rgba(4, 27, 57, 0.08)",
+                                  color: "#041B39",
                                   fontWeight: 700,
                                   fontSize: 15,
                                 }}

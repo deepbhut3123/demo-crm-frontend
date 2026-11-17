@@ -28,7 +28,7 @@
   font-weight: normal;
   padding: 10px !important;
   /* Explicitly set font weight */
-  border: 1px solid#e9edf6 !important;
+  border: 1px solid#DCE8EC !important;
   border-radius: 6px;
   height: 100px !important;
   width: 100% !important;
@@ -40,8 +40,8 @@
 /* Corrected selector - removed space */
 .Allinputtextarea:focus {
   font-family: "Inter", sans-serif;
-  border-color: #40a9ff;
-  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  border-color: #00D8F3;
+  box-shadow: 0 0 0 2px rgba(0, 216, 243, 0.2);
 }
 
 .Allinputtextarea::placeholder {
@@ -57,7 +57,7 @@
   padding: 0 0.0rem !important;
   height: 31px !important;
   font-size: 13px;
-  border: 1px solid#e9edf6 !important;
+  border: 1px solid#DCE8EC !important;
   border-radius: 4px;
   color: #333335;
   background-color: #fff;
@@ -77,7 +77,7 @@
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  border: 1px solid#e9edf6 !important;
+  border: 1px solid#DCE8EC !important;
   width: 100%;
   height: 43px !important;
   padding: 10px !important;
@@ -129,7 +129,7 @@
   font-family: "Inter", sans-serif !important;
   height: 40px !important;
   box-shadow: none !important;
-  border: 1px solid #e9edf6 !important;
+  border: 1px solid #DCE8EC !important;
   padding: 0 0.99rem !important;
   box-shadow: none !important;
   border-radius: 0.35rem !important;
@@ -178,7 +178,7 @@
   box-shadow: none;
   margin-bottom: 1rem;
   border-radius: 6px;
-  background-color: #f3f6f8;
+  background-color: #F1F7F8;
   border: 1px solid #ccc;
   cursor: pointer;
   display: flex;
@@ -196,7 +196,7 @@
   box-shadow: none;
   margin-bottom: 1rem;
   border-radius: 6px;
-  background-color: #001529;
+  background-color: #041B39;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -208,7 +208,7 @@
 }
 
 .allsubmitebutton:hover {
-  background-color: #022648;
+  background-color: #083363;
 }
 
 
@@ -219,7 +219,7 @@
   box-shadow: none;
   margin-bottom: 1vw;
   border-radius: 5px;
-  background-color: #001529;
+  background-color: #041B39;
   color: white;
   border: none;
   cursor: pointer;
@@ -250,21 +250,21 @@
 
 .allbuttons {
   height: 33px;
-  background-color: #001529 !important;
+  background-color: #041B39 !important;
 }
 
 /* your CSS or SCSS file */
 /* .allbuttons:hover,
 .allbuttons:focus,
 .allbuttons:active {
-  background-color:#001529 !important; 
+  background-color:#041B39 !important;
   box-shadow: none !important;
   color: white !important;
   border: none !important;
 } */
 .allbutton {
   height: 33px;
-  background-color: #001529;
+  background-color: #041B39;
   color: white;
   border: none;
   border-radius: 5px;
@@ -363,26 +363,26 @@
 }
 
 .ant-picker-ok button {
-  background-color: #001529 !important;
+  background-color: #041B39 !important;
   /* Change to your desired color */
   color: white !important;
   /* Ensure text remains visible */
-  border-color: #001529 !important;
+  border-color: #041B39 !important;
 }
 
 /* App.css */
 .custom-update-button {
-  background-color: #001529 !important;
+  background-color: #041B39 !important;
   /* Change to desired color */
-  border-color: #001529 !important;
+  border-color: #041B39 !important;
   color: white !important;
 }
 
 .custom-update-button:hover {
   background-color: transparent !important;
   /* Hover effect */
-  border-color: #001529 !important;
-  color: #001529 !important
+  border-color: #041B39 !important;
+  color: #041B39 !important
 }
 
 /* customStyles.css */
@@ -391,14 +391,14 @@
   outline: none !important;
 
   box-shadow: none !important;
-  border: 1px solid #e9edf6 !important;
+  border: 1px solid #DCE8EC !important;
   /* Or your desired border color */
 }
 
 /* Additional styles to ensure consistent appearance */
 .ant-select-selection-search input {
   outline: none !important;
-  /* border: 1px solid #e9edf6 !important; */
+  /* border: 1px solid #DCE8EC !important; */
   margin-top: 2px !important;
   box-shadow: none !important;
 }
@@ -408,7 +408,7 @@
   box-shadow: none !important;
   margin-top: 0 !important;
   height: 43px !important;
-  border: 1px solid #e9edf6 !important;
+  border: 1px solid #DCE8EC !important;
   padding-top: 2px !important;
   /* Adjust padding to center the cursor */
   padding-bottom: 4px !important;
@@ -421,12 +421,12 @@
   font-size: 13px !important;
   color: #b8b8b8 !important;
   height: 43px !important;
-  border: 1px solid #e9edf6 !important;
+  border: 1px solid #DCE8EC !important;
 }
 
 :where(.css-dev-only-do-not-override-apn68).ant-select-multiple.ant-select-lg .ant-select-selection-placeholder .ant-select-selection-item {
   outline: none !important;
-  border: 1px solid #e9edf6 !important;
+  border: 1px solid #DCE8EC !important;
   box-shadow: none !important;
   font-family: "Inter", sans-serif !important;
   font-size: 13px !important;
@@ -453,8 +453,8 @@
 .ant-select-selector:focus,
 .ant-select-selector:active,
 .ant-select-selector-focused {
-  border-color: #40a9ff !important;
-  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+  border-color: #00D8F3 !important;
+  box-shadow: 0 0 0 2px rgba(0, 216, 243, 0.2) !important;
 }
 
 .ant-select {
@@ -464,13 +464,13 @@
 
 .ant-select-selector {
   height: 35px !important;
-  border: 1px solid #e9edf6 !important;
+  border: 1px solid #DCE8EC !important;
   border-radius: 4px !important;
 }
 
 .ant-select-selector .custom {
   height: 35px !important;
-  background-color: #f9b138 !important;
+  background-color: #E8F4FD !important;
 }
 
 /* For multiple select placeholder color */
@@ -521,7 +521,7 @@
   margin: 5px 4px 1px 0 !important;
   padding: 0 6px !important;
   background: #f5f5f5 !important;
-  border: 1px solid #e9edf6 !important;
+  border: 1px solid #DCE8EC !important;
   border-radius: 4px !important;
   font-size: 12px !important;
   max-width: 200px !important;
@@ -780,7 +780,7 @@ element.style {
 }
 
 .ant-table-thead > tr > th {
-  background-color: #f0f2f5 !important;
+  background-color: #EFF5F6 !important;
   font-weight: 600;
   color: #4b4b4b;
   font-size: 14px;
@@ -858,28 +858,33 @@ element.style {
 }
 
 /* Normal item */
-.ant-menu-item {
-  color: #004d40 !important; /* dark teal */
+.ant-layout-sider .ant-menu-item,
+.ant-drawer .ant-menu-item {
+  color: #FFFFFF !important;
   font-weight: 500;
 }
 
 /* Hover state */
-.ant-menu-item:hover {
-  background-color: #b2dfdb !important; /* light teal */
-  color: #00695c !important;
+.ant-layout-sider .ant-menu-item:hover,
+.ant-drawer .ant-menu-item:hover {
+  background-color: #083363 !important;
+  color: #FFFFFF !important;
 }
 
 /* Selected item */
-.ant-menu-item-selected {
-  background-color: #26a69a !important; /* medium teal */
+.ant-layout-sider .ant-menu-item-selected,
+.ant-drawer .ant-menu-item-selected {
+  background-color: #0067E8 !important; /* medium teal */
   color: white !important;
   font-weight: 600;
   border-radius: 6px;
 }
 
-.ant-menu-item-selected:hover,
-.ant-menu-item-selected.ant-menu-item-active {
-  background-color: #26a69a !important;
+.ant-layout-sider .ant-menu-item-selected:hover,
+.ant-layout-sider .ant-menu-item-selected.ant-menu-item-active,
+.ant-drawer .ant-menu-item-selected:hover,
+.ant-drawer .ant-menu-item-selected.ant-menu-item-active {
+  background-color: #0067E8 !important;
   color: white !important;
 }
 .compact-table .ant-table-cell {

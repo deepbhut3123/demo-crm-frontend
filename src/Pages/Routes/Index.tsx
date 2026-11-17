@@ -31,8 +31,8 @@ import {
 
 const { Title, Text } = Typography;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 type AdminRoute = {
@@ -444,8 +444,8 @@ const RoutesPage: React.FC = () => {
             onClick={() => setActiveRoute(record)}
             style={{
               borderRadius: 8,
-              background: "#00695C",
-              borderColor: "#00695C",
+              background: "#0067E8",
+              borderColor: "#0067E8",
               width: 30,
               height: 30,
               padding: 0,
@@ -505,7 +505,7 @@ const RoutesPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -514,7 +514,7 @@ const RoutesPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
         }}
       >
         <Space
@@ -550,8 +550,8 @@ const RoutesPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add Route
@@ -610,8 +610,8 @@ const RoutesPage: React.FC = () => {
               onClick={openAllShopsMap}
               style={{
                 borderRadius: 10,
-                background: "#00695C",
-                borderColor: "#00695C",
+                background: "#0067E8",
+                borderColor: "#0067E8",
               }}
             >
               Open All Shops On Map
@@ -628,7 +628,7 @@ const RoutesPage: React.FC = () => {
                 bordered={false}
                 style={{
                   background: "#f7fffd",
-                  border: "1px solid rgba(0, 105, 92, 0.1)",
+                  border: "1px solid rgba(0, 216, 243, 0.1)",
                   borderRadius: 14,
                 }}
               >
@@ -688,8 +688,8 @@ const RoutesPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -703,17 +703,17 @@ const RoutesPage: React.FC = () => {
         width={860}
         styles={{
           header: {
-            borderBottom: "1px solid rgba(0, 105, 92, 0.12)",
+            borderBottom: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "18px 22px",
             background:
-              "linear-gradient(135deg, rgba(224,247,246,0.95) 0%, rgba(255,255,255,1) 70%)",
+              "linear-gradient(135deg, rgba(232, 248, 246,0.95) 0%, rgba(255,255,255,1) 70%)",
           },
           body: {
             padding: "22px 24px 10px",
             background: "linear-gradient(180deg, #ffffff 0%, #fbfefd 100%)",
           },
           footer: {
-            borderTop: "1px solid rgba(0, 105, 92, 0.12)",
+            borderTop: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "16px 24px 20px",
             background: "#fff",
           },

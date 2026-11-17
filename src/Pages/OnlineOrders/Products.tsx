@@ -27,8 +27,8 @@ import "./Index.css";
 const { Search } = Input;
 const { Title, Text } = Typography;
 const THEME = {
-  dark: "#004D40",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 type OnlineProductRow = {
@@ -217,7 +217,7 @@ const OnlineProductsPage: React.FC = () => {
       style={{
         padding: 20,
         background:
-          "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+          "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
         minHeight: "calc(100vh - 50px)",
       }}
     >
@@ -226,7 +226,7 @@ const OnlineProductsPage: React.FC = () => {
         style={{
           borderRadius: 18,
           boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           overflow: "hidden",
         }}
       >
@@ -270,8 +270,8 @@ const OnlineProductsPage: React.FC = () => {
                 border: "none",
                 color: "#fff",
                 fontWeight: 600,
-                background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-                boxShadow: "0 10px 20px rgba(0, 105, 92, 0.18)",
+                background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+                boxShadow: "0 10px 20px rgba(0, 216, 243, 0.18)",
               }}
             >
               Add Product
@@ -314,7 +314,7 @@ const OnlineProductsPage: React.FC = () => {
           style: {
             borderRadius: 10,
             border: "none",
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
           },
         }}
       >

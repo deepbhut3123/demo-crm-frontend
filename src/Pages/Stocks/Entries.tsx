@@ -72,8 +72,8 @@ type StockEntryFormValues = {
 };
 
 const THEME = {
-  dark: "#0f3d3e",
-  mid: "#00695C",
+  dark: "#041B39",
+  mid: "#0067E8",
 };
 
 const formatCurrency = (value?: number) =>
@@ -356,14 +356,14 @@ const StocksEntriesPage: React.FC = () => {
       style={{
         padding: 20,
         minHeight: "calc(100vh - 50px)",
-        background: "linear-gradient(180deg, #f6fbfb 0%, #eef6f5 45%, #f8fafc 100%)",
+        background: "linear-gradient(180deg, #F6FBFA 0%, #EFF9F8 45%, #f8fafc 100%)",
       }}
     >
       <Card
         bordered={false}
         style={{
           borderRadius: 20,
-          border: "1px solid rgba(0, 105, 92, 0.08)",
+          border: "1px solid rgba(0, 216, 243, 0.08)",
           boxShadow: "0 18px 45px rgba(15, 23, 42, 0.08)",
           overflow: "hidden",
         }}
@@ -397,8 +397,8 @@ const StocksEntriesPage: React.FC = () => {
               border: "none",
               color: "#fff",
               fontWeight: 700,
-              background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-              boxShadow: "0 12px 24px rgba(0, 105, 92, 0.18)",
+              background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+              boxShadow: "0 12px 24px rgba(0, 216, 243, 0.18)",
             }}
           >
             Add Daily Entry
@@ -455,8 +455,8 @@ const StocksEntriesPage: React.FC = () => {
         okButtonProps={{
           loading: saving,
           style: {
-            background: "linear-gradient(135deg, #00695C 0%, #0f766e 100%)",
-            borderColor: "#00695C",
+            background: "linear-gradient(135deg, #0067E8 0%, #00D8F3 100%)",
+            borderColor: "#0067E8",
             borderRadius: 10,
           },
         }}
@@ -466,17 +466,17 @@ const StocksEntriesPage: React.FC = () => {
         destroyOnClose
         styles={{
           header: {
-            borderBottom: "1px solid rgba(0, 105, 92, 0.12)",
+            borderBottom: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "18px 22px",
             background:
-              "linear-gradient(135deg, rgba(224,247,246,0.95) 0%, rgba(255,255,255,1) 70%)",
+              "linear-gradient(135deg, rgba(232, 248, 246,0.95) 0%, rgba(255,255,255,1) 70%)",
           },
           body: {
             padding: "22px 24px 10px",
             background: "linear-gradient(180deg, #ffffff 0%, #fbfefd 100%)",
           },
           footer: {
-            borderTop: "1px solid rgba(0, 105, 92, 0.12)",
+            borderTop: "1px solid rgba(0, 216, 243, 0.12)",
             padding: "16px 24px 20px",
             background: "#fff",
           },
@@ -531,7 +531,7 @@ const StocksEntriesPage: React.FC = () => {
                         alignItems: "center",
                         padding: 14,
                         borderRadius: 16,
-                        border: "1px solid rgba(0, 105, 92, 0.08)",
+                        border: "1px solid rgba(0, 216, 243, 0.08)",
                         background: "linear-gradient(180deg, #ffffff 0%, #f8fbfb 100%)",
                       }}
                     >
@@ -577,8 +577,8 @@ const StocksEntriesPage: React.FC = () => {
               marginTop: 18,
               padding: "14px 16px",
               borderRadius: 14,
-              background: "rgba(0, 105, 92, 0.06)",
-              border: "1px solid rgba(0, 105, 92, 0.12)",
+              background: "rgba(0, 216, 243, 0.06)",
+              border: "1px solid rgba(0, 216, 243, 0.12)",
               display: "flex",
               justifyContent: "flex-end",
             }}
@@ -700,8 +700,8 @@ const StocksEntriesPage: React.FC = () => {
                   style={{
                     padding: "10px 14px",
                     borderRadius: 12,
-                    border: "1px solid rgba(0, 105, 92, 0.15)",
-                    background: "rgba(0, 105, 92, 0.06)",
+                    border: "1px solid rgba(0, 216, 243, 0.15)",
+                    background: "rgba(0, 216, 243, 0.06)",
                   }}
                 >
                   <Text strong>Total Amount : {formatCurrency(activeEntry.totalAmount)}</Text>
